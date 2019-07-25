@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Perceptron Sandbox</title>
+</head>
+
+<body>
+
+    <!-- Main Canvas -->
+    <canvas id="main-canvas" width="600" height="500"></canvas>
+    <br>
+    <br>
+
+    <!-- Error Canvas -->
+    <span>Error Evolution</span>
+    <br>
+    <canvas id="error-canvas" width="600" height="200"></canvas>
+
+
+    <!-- Command console -->
+    <div id="console">
+
+        <button id="btn-reset-scenario">Reset Scenario</button>
+        <button id="btn-toggle-scenario">Run Scenario</button>
+
+        <br>
+        <span>Scenario Step:</span>
+        <input type="range" min="0" max="10" value="1" class="slider" id="sld-scenario-step">
+        <input type="text" id="txt-scenario-step" value="10" size="5">
+        <span> ms</span>
+
+        <br>
+        <span>Scenario Data:</span>
+        <input type="range" min="1" max="10000" value="100" class="slider" id="sld-scenario-data">
+        <input type="text" id="txt-scenario-data" value="100" size="5">
+        <span> data points</span>
+
+    </div>
+
+
+    <!-- Scripts -->
+    <script src="js/main.js" type="module"></script>
+</body>
+
+</html>
